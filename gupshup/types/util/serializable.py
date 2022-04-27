@@ -1,8 +1,9 @@
 from typing import Type, TypeVar, Union
-from ..primitive import JSON
 from abc import ABC, abstractmethod
 from enum import Enum
 import json
+
+from ..primitive import JSON
 
 SerializableSubtype = TypeVar("SerializableSubtype", bound="SerializableAttrs")
 
@@ -84,6 +85,3 @@ class SerializableEnum(Serializable, Enum):
 
     def __repr__(self):
         return f"{self.__class__.__name__}.{self.name}"
-
-
-

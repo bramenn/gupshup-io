@@ -1,8 +1,8 @@
 from ..util import ExtensibleEnum, Obj, Serializable, SerializableAttrs, deserializer, field
 
-
-TEXT_MESSAGE_TYPES = ("text")
+TEXT_MESSAGE_TYPES = "text"
 MEDIA_MESSAGE_TYPES = ("Image", "video", "audio", "file")
+
 
 class MessageType(ExtensibleEnum):
     """A message type."""
